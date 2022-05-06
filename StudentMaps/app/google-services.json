@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "507772872254",
+    "project_id": "studentmaps-335313",
+    "storage_bucket": "studentmaps-335313.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507772872254:android:51d12009e9d5515926d36f",
+        "android_client_info": {
+          "package_name": "com.example.studentmaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507772872254-d0tqrr8me0d3hj2nl03e5spbsbam29lf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbi9lU_JqyxxFmmOJrCDUhhK3YPvA32J4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507772872254-d0tqrr8me0d3hj2nl03e5spbsbam29lf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

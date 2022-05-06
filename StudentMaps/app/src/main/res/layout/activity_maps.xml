@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80FFFFFF"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="409dp"
+        android:layout_height="542dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/locationInput"
+        android:layout_width="322dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:paddingLeft="10dp" />
+
+    <ImageView
+        android:id="@+id/searchButton"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_search_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/food"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:background="#359c5e"
+        android:padding="8dp"
+        android:text="Food"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/clinic"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="72dp"
+        android:background="#359c5e"
+        android:padding="8dp"
+        android:text="Clinics"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/supermarkets"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="72dp"
+        android:background="#359c5e"
+        android:padding="8dp"
+        android:text="Supermarkets"
+        android:textColor="#ffffff"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="@+id/clinic"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/entertainment"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="72dp"
+        android:background="#359c5e"
+        android:padding="8dp"
+        android:text="Entertainment"
+        android:textColor="#ffffff"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="@+id/supermarkets"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/uni"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="8dp"
+        android:background="#359c5e"
+        android:padding="8dp"
+        android:text="Uni"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/food"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/estateagents"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="8dp"
+        android:background="#359c5e"
+        android:padding="8dp"
+        android:text="Estate Agencies"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="@+id/uni"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="44dp"
+        android:text="Range (100 = approx. 100 meters)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sBar"
+        android:layout_width="349dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="4dp"
+        android:stepSize="300.0"
+        android:value="300.0"
+        android:valueFrom="300.0"
+        android:valueTo="1500.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
